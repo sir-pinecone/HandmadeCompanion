@@ -64,4 +64,8 @@ categories:
       doc_link: "http://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-manual-325462.pdf"
     - doc_name: "Microsoft's MSDN Windows API Index"
       doc_link: "http://msdn.microsoft.com/en-us/library/windows/desktop/ff818516(v=vs.85).aspx"
+    - doc_name: "Agner Fog's lists of instruction latencies, throughputs and micro-operation breakdowns for Intel, AMD and VIA CPUs"
+      doc_link: "http://www.agner.org/optimize/instruction_tables.pdf"
+    - doc_name: "Intel Intrinsics Guide"
+      doc_link: "https://software.intel.com/sites/landingpage/IntrinsicsGuide/"
 ---
