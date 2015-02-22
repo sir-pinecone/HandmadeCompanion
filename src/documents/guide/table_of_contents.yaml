@@ -119,21 +119,21 @@ categories:
         [day051, day052, day053, day055, day055]
 
   - title: "Week 12" 
-    iker_url: "handmade_hero_week_012.png"
+    iker_url:
     description: >
         Twelveth week continues with entities. And space. Entities in space.    
     days:
         [day056, day057, day058, day059, day060]
 
   - title: "Week 13" 
-    iker_url: "handmade_hero_week_013.png"
+    iker_url:
     description: >
         The thirteenth week concentrates on simulation.
     days:
         [day061, day062, day063, day064, day065]
 
   - title: "Week 14" 
-    iker_url: "handmade_hero_week_014.png"
+    iker_url: 
     description: >
         Week fourteen.
     days:
