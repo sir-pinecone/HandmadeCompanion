@@ -15,7 +15,7 @@ install:
 - sudo apt-get install wput
 - npm install
 script:
-- docpad generate --env static
+- build.sh
 after_success:
 - wput out ftp://$FTP_USER:$FTP_PASS@$FTP_HOST/ --less-verbose --reupload --dont-continue
   --basename=out/ | sed "s/=>.*:21//"
