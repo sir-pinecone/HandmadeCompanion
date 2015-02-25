@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="640px" height="161px" viewBox="0 0 640 161" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>collision-detection-t</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="collision-detection-t" sketch:type="MSArtboardGroup">
+            <path d="M0.344103456,80.5 L639.53833,80.5" id="Line-2" stroke="#EE6463" stroke-linecap="square" stroke-dasharray="2,2,2,2" sketch:type="MSShapeGroup"></path>
+            <circle id="Oval-1" fill="#000000" sketch:type="MSShapeGroup" cx="241" cy="81" r="8"></circle>
+            <circle id="Oval-2" fill="#000000" sketch:type="MSShapeGroup" cx="401" cy="81" r="8"></circle>
+            <text id="OLD" sketch:type="MSTextLayer" font-family="Courier New" font-size="16" font-weight="bold" sketch:alignment="middle" fill="#000000">
+                <tspan x="224.597656" y="117">OLD</tspan>
+            </text>
+            <text id="T-=-0" sketch:type="MSTextLayer" font-family="Courier New" font-size="16" font-weight="bold" sketch:alignment="middle" fill="#000000">
+                <tspan x="214.996094" y="56">T = 0</tspan>
+            </text>
+            <text id="T-=-1" sketch:type="MSTextLayer" font-family="Courier New" font-size="16" font-weight="bold" sketch:alignment="middle" fill="#000000">
+                <tspan x="376.996094" y="56">T = 1</tspan>
+            </text>
+            <text id="T->-1" sketch:type="MSTextLayer" font-family="Courier New" font-size="16" font-weight="bold" sketch:alignment="middle" fill="#EE6463">
+                <tspan x="535.996094" y="57">T &gt; 1</tspan>
+            </text>
+            <text id="T-&lt;-0" sketch:type="MSTextLayer" font-family="Courier New" font-size="16" font-weight="bold" sketch:alignment="middle" fill="#EE6463">
+                <tspan x="55.9960938" y="57">T &lt; 0</tspan>
+            </text>
+            <text id="NEW" sketch:type="MSTextLayer" font-family="Courier New" font-size="16" font-weight="bold" sketch:alignment="middle" fill="#000000">
+                <tspan x="386.597656" y="117">NEW</tspan>
+            </text>
+            <path d="M241.5,80.5 L388.5,80.5" id="Line" stroke="#000000" stroke-width="3" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            <path id="Line-decoration-1" d="M388.5,80.5 C384.72,79.45 381.48,78.55 377.7,77.5 C377.7,79.6 377.7,81.4 377.7,83.5 C381.48,82.45 384.72,81.55 388.5,80.5 C388.5,80.5 388.5,80.5 388.5,80.5 Z" stroke="#000000" stroke-width="3" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="640px" height="320px" viewBox="0 0 640 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>collision-detection-tiles-rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="collision-detection-tiles-rectangle" sketch:type="MSArtboardGroup">
+            <g id="Group-+-Group-2-+-Group-3" sketch:type="MSLayerGroup" fill="#D8D8D8">
+                <rect id="Rectangle-1" fill-opacity="0.583276721" sketch:type="MSShapeGroup" x="480" y="0" width="160" height="160"></rect>
+                <rect id="Rectangle-4" fill-opacity="0.583276721" sketch:type="MSShapeGroup" x="160" y="0" width="160" height="160"></rect>
+                <rect id="Rectangle-5" sketch:type="MSShapeGroup" x="0" y="0" width="160" height="160"></rect>
+                <rect id="Rectangle-3" sketch:type="MSShapeGroup" x="320" y="0" width="160" height="160"></rect>
+                <rect id="Rectangle-1" sketch:type="MSShapeGroup" x="480" y="160" width="160" height="160"></rect>
+                <rect id="Rectangle-4" sketch:type="MSShapeGroup" x="160" y="160" width="160" height="160"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.583276721" sketch:type="MSShapeGroup" x="0" y="160" width="160" height="160"></rect>
+                <rect id="Rectangle-3" fill-opacity="0.583276721" sketch:type="MSShapeGroup" x="320" y="160" width="160" height="160"></rect>
+            </g>
+            <rect id="Rectangle-28" stroke="#2A353A" stroke-width="2" sketch:type="MSShapeGroup" x="0" y="0" width="640" height="320"></rect>
+            <circle id="Oval-2" fill="#000000" sketch:type="MSShapeGroup" cx="593" cy="49" r="8"></circle>
+            <g id="Oval-1-+-OLD" sketch:type="MSLayerGroup" transform="translate(17.000000, 249.000000)" fill="#000000">
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="17" cy="8" r="8"></circle>
+                <text id="OLD" sketch:type="MSTextLayer" font-family="Courier New" font-size="16" font-weight="bold" sketch:alignment="middle">
+                    <tspan x="0.59765625" y="44">OLD</tspan>
+                </text>
+            </g>
+            <text id="NEW" sketch:type="MSTextLayer" font-family="Courier New" font-size="16" font-weight="bold" sketch:alignment="middle" fill="#000000">
+                <tspan x="579.597656" y="82">NEW</tspan>
+            </text>
+            <path d="M33.5,257.5 L582.5,51.5" id="Line" stroke="#000000" stroke-width="3" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            <path id="Line-decoration-1" d="M582.147818,51.6321486 C578.239882,51.9770296 574.890224,52.2726419 570.982289,52.6175229 C571.72004,54.5836669 572.352399,56.2689333 573.090151,58.2350773 C576.260334,55.9240523 578.977634,53.9431737 582.147818,51.6321486 C582.147818,51.6321486 582.147818,51.6321486 582.147818,51.6321486 Z" stroke="#000000" stroke-width="3" stroke-linecap="square"></path>
+            <text id="MinTile" sketch:type="MSTextLayer" font-family="Courier New" font-size="16" font-weight="bold" sketch:alignment="middle" fill="#000000">
+                <tspan x="47.3945312" y="89">MinTile</tspan>
+            </text>
+            <text id="MaxTile" sketch:type="MSTextLayer" font-family="Courier New" font-size="16" font-weight="bold" sketch:alignment="middle" fill="#000000">
+                <tspan x="529.394531" y="248">MaxTile</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
