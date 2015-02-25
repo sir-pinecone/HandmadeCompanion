@@ -1,7 +1,7 @@
-# Collision detection
-
-Please note that all examples are written in pseudo code, trying to stay true to Casey's conventions. I have also removed additional code that deals with limitations of floats. I have changed the code that is specific to C, as I don't want to explain how C works. For further details on that, please refer to the Casey's original videos and code.
-
+---
+title: "Collision detection"
+layout: "topics"
+---
 This article describes several methods (from simplest to "Casey") so you can choose the best one that works for you in the current development phase / game style.
 
 ## Simplest method

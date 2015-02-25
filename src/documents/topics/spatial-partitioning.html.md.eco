@@ -1,3 +1,8 @@
+---
+title: "Spatial partitioning (STUB)"
+layout: "topics"
+---
+
 # Spatial partitioning (STUB)
 
 Games usually have thousands of various entities in the world, but only a few of them needs to be updated, rendered or considered in collision detection. Usually you only work with entities that are visible on the screen.

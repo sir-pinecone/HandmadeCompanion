@@ -1,3 +1,8 @@
+---
+title: "Linear interpolation (STUB)"
+layout: "topics"
+---
+
 # Linear interpolation (STUB)
 
 Linear interpolation (also called *lerp*) is a simple but powerful function very often used in games in various forms. A very common use is to smoothly interpolate between two values:
