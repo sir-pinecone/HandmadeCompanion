@@ -25,7 +25,7 @@ markers:
     "0:22:41": "Couldn't it[the platform decision] also be to make emulation harder?"
     "0:22:50": "Yesterday you said why you plan to use visual studio as only a debugger, but you wouldn't be using the editor. What will you be using to edit code/compile if not using visual studio?" -
     "0:23:46": "What are these dword, word, and qword things in the win32api? I know they're typedefs so I'm asking why they exist."
-    "0:24:50": "Not really directly related to the content of the stream, but do you think c++ has beaten c as the standard for game programming?" -
+    "0:24:50": "Not really directly related to the content of the stream, but do you think c++ has beaten c as the standard for game programming?"
     "0:25:36": "How do you psychologically deal with not having visceral results for something you've been programming for a long time?"
     "0:26:16": "You should really put a link to the handmade hero website in the twitch pages description."
     "0:26:41": "What do you think about rust for game development? Have you tried it out yet?"
