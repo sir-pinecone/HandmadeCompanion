@@ -110,39 +110,123 @@ categories:
     days:
         [day046, day047, day048, day049, day050]
 
-  - title: "Week 11" 
+  - title: "Week 11"
     iker_url: "handmade_hero_week_011.png"
     description: >
-        The eleventh week of Handmade Hero is mainly about handling 
+        The eleventh week of Handmade Hero is mainly about handling
         entities.
     days:
         [day051, day052, day053, day054, day055]
 
-  - title: "Week 12" 
+  - title: "Week 12"
     iker_url:
     description: >
-        Twelfth week continues with entities. And space. Entities in space.    
+        Twelfth week continues with entities. And space. Entities in space.
     days:
         [day056, day057, day058, day059, day060]
 
-  - title: "Week 13" 
+  - title: "Week 13"
     iker_url:
     description: >
         The thirteenth week concentrates on simulation.
     days:
         [day061, day062, day063, day064, day065]
 
-  - title: "Week 14" 
-    iker_url: 
+  - title: "Week 14"
+    iker_url:
     description: >
         Week fourteen.
     days:
         [day066, day067, day068, day069, day070]
 
-  - title: "Week 15" 
-    iker_url: 
+  - title: "Week 15"
+    iker_url:
     description: >
         Week fifteen!
     days:
         [day071, day072, day073, day074, day075]
+
+  - title: "Week 16"
+    iker_url:
+    description: >
+        Week sixteen!
+    days:
+        [day076, day077, day078, day079, day080]
+
+  - title: "Week 17"
+    iker_url:
+    description: >
+        Week seventeen!
+    days:
+        [day081, day082, day083, day084, day085]
+
+  - title: "Week 18"
+    iker_url:
+    description: >
+        Week eightteen!
+    days:
+        [day086, day087, day088, day089, day090]
+
+  - title: "Week 19"
+    iker_url:
+    description: >
+        Week nineteen!
+    days:
+        [day091, day092, day093, day094, day095]
+
+  - title: "Week 20"
+    iker_url:
+    description: >
+        Week twenty!
+    days:
+        [day096, day097, day098, day099, day100]
+
+  - title: "Week 21"
+    iker_url:
+    description: >
+        Week twentyone!
+    days:
+        [day101, day102, day103, day104, day105]
+
+  - title: "Week 22"
+    iker_url:
+    description: >
+        Week twentytwo!
+    days:
+        [day106, day107, day108, day109, day110]
+
+  - title: "Week 23"
+    iker_url:
+    description: >
+        Week twentythree!
+    days:
+        [day111, day112, day113, day114, day115]
+
+  - title: "Week 24"
+    iker_url:
+    description: >
+        Week twentyfour!
+    days:
+        [day116, day117, day118, day119, day120]
+
+  - title: "Week 25"
+    iker_url:
+    description: >
+        Week twentyfive!
+    days:
+        [day121, day122, day123, day124, day125]
+
+  - title: "Week 26"
+    iker_url:
+    description: >
+        Week twentysix!
+    days:
+        [day126, day127, day128, day129, day130]
+
+  - title: "Week 27"
+    iker_url:
+    description: >
+        Week twentyseven!
+    days:
+        [day131, day132, day133, day134, day135]
 ---
