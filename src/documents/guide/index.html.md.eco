@@ -63,9 +63,10 @@ level of experience.
  
  <% for page, i in pages: %>
   <% url = @rootPath() + page.url %>
+  <% statustext = if (page.markers == undefined or page.markers.length==0) then ' - Annotations Incomplete' else '' %>
   <% linktext = if page.basename.match(/qa/i) then 'Q&A' else page.title %>
   <% sep = if i < pages.length-1 then ' + ' else '' %>
-  [<%= linktext %>](<%= url %>)<%= sep %>
+  [<%= linktext %>](<%= url %>) <i><%= statustext %></i> <%= sep %>
  <% end %>
  
 <% else if placeholder: %>
