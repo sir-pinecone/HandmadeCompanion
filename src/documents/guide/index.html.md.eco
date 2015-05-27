@@ -73,7 +73,10 @@ level of experience.
    <% for marker,thetxt of page.markers: %>
     <% timematch = marker.match(/^0?0?:?([0-9]{1,2}):[0-9]{1,2}$/) %>
      <% if timematch: %>
-      <% if parseInt(timematch[1]) < 30 then qaonly = 0 %>
+      <% if parseInt(timematch[1]) < 30: %>
+       <% qaonly = 0 %>
+       <% break %>
+      <% end %>
      <% end %>
    <% end %>
    <% if qaonly == 1 then statustext = ' - Q&A Annotations Only' %>
