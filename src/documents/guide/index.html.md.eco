@@ -83,9 +83,11 @@ level of experience.
   <% end %>
 <% # End hacky Q&A block %>
 
+  <% notesstatus = if page.content.length > 4 then " (With Notes)" else "" %>
+
   <% linktext = if page.basename.match(/qa/i) then 'Q&A' else page.title %>
   <% sep = if i < pages.length-1 then ' + ' else '' %>
-  [<%= linktext %>](<%= url %>) <i><%= statustext %></i> <%= sep %>
+  [<%= linktext %>](<%= url %>) <i><%= statustext %></i> <i><%= notesstatus %></i> <%= sep %>
  <% end %>
  
 <% else if placeholder: %>
