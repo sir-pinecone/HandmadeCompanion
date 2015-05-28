@@ -63,9 +63,31 @@ level of experience.
  
  <% for page, i in pages: %>
   <% url = @rootPath() + page.url %>
+  <% statustext = if (page.markers == undefined or page.markers.length==0) then ' - Annotations Incomplete' else '' %>
+
+<% # Uses a hacky heuristic (no annotations prior to 00:30?) to find "Q&A Only" annotated vids %>
+<% # Can and should be removed once all Q&A only annotated videos are fully annotated.  %>
+
+  <% if(page.markers != undefined): %>
+   <% qaonly = 1 %>
+   <% for marker,thetxt of page.markers: %>
+    <% timematch = marker.match(/^0?0?:?([0-9]{1,2}):[0-9]{1,2}$/) %>
+     <% if timematch: %>
+      <% if parseInt(timematch[1]) < 30: %>
+       <% qaonly = 0 %>
+       <% break %>
+      <% end %>
+     <% end %>
+   <% end %>
+   <% if qaonly == 1 then statustext = ' - Q&A Annotations Only' %>
+  <% end %>
+<% # End hacky Q&A block %>
+
+  <% notesstatus = if page.content.length > 4 then " (With Notes)" else "" %>
+
   <% linktext = if page.basename.match(/qa/i) then 'Q&A' else page.title %>
   <% sep = if i < pages.length-1 then ' + ' else '' %>
-  [<%= linktext %>](<%= url %>)<%= sep %>
+  [<%= linktext %>](<%= url %>) <i><%= statustext %></i> <i><%= notesstatus %></i> <%= sep %>
  <% end %>
  
 <% else if placeholder: %>
