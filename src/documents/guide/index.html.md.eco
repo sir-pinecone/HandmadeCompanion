@@ -59,7 +59,7 @@ level of experience.
 <% if pages.length > 0: %>
  
  <% if dayName.match(/^day\d+$/i): %>
-  <%= 'Day '+dayName.slice(3)+":" %>
+  <%= 'Day '+dayName.slice(3)+":" %>#
  <% end %>
  
  <% for page, i in pages: %>
