@@ -32,11 +32,6 @@
                 <li <%= "id='activenav'" if (@document.button_id=="thanks") %> >
                     <a href="<%= @site.thanks_url %>">Thanks!</a>
                 </li>
-                <li>
-                  <form method="GET" action="/search/index.html" class="searchbar">
-                    <input name="query" placeholder="Search by Tags">
-                  </form>
-                </li>
             </ul>
         </nav>
     </header>
