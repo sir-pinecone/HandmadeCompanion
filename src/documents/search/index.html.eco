@@ -1,0 +1,23 @@
+---
+layout: 'guide'
+title: 'Search Results'
+dynamic: true
+---
+
+
+
+<%if @req.query.query :%>
+    <%query = @req.query.query %>
+
+    <%-"<h2>Searching for videos tagged '#{query}'</h2>"%>
+    <div>
+    <ul>
+       <% for document in @getCollection('documents').findAll({tags:$in:query}).toJSON() :%>
+        <li><a href='<%=document.url%>'><%=document.title%></a></li>
+           
+        <%end%>
+      </ul>
+    </div>
+<%else:%>
+    <%=## "No query provided" %>
+<%end%>
