@@ -26,7 +26,7 @@ markers:
     "1:07:46": "Including files"
 ---
 
-##Updates
+## Updates
 
 Since this video was released, Microsoft has made [Visual Studio Community 2013](http://www.visualstudio.com/products/visual-studio-community-vs)
 available for free to small teams. Since it is much closer to the Professional version of the tools, using it is
