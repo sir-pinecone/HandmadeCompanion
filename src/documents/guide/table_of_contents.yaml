@@ -110,7 +110,7 @@ categories:
     days:
         [day046, day047, day048, day049, day050]
 
-  - title: "Week 11"
+  - title: "Week 11: Basic Entity Handling"
     iker_url: "handmade_hero_week_011.png"
     description: >
         The eleventh week of Handmade Hero is mainly about handling
@@ -118,7 +118,7 @@ categories:
     days:
         [day051, day052, day053, day054, day055]
 
-  - title: "Week 12"
+  - title: "Week 12: Entities in Space"
     iker_url:
     description: >
         The twelfth week continues with entities. And space. Entities in space.
