@@ -135,7 +135,7 @@ categories:
   - title: "Week 14: Collision Rules"
     iker_url:
     description: >
-        The fourteenth week continues with simulation region. And Figure out how to handle collision rules.
+        The fourteenth week continues with simulation regions. And Figure out how to handle collision rules.
     days:
         [day066, day067, day068, day069, day070]
 
