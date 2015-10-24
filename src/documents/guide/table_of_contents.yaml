@@ -334,4 +334,11 @@ categories:
         Week forty-two
     days:
         [day206, day207, day208, day209, day210]
+
+  - title: "Week 43"
+    iker_url:
+    description: >
+        Week forty-three
+    days:
+        [day211]
 ---
