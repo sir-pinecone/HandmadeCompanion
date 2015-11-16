@@ -11,12 +11,16 @@ not have been possible without the generous contributions
 of time and energy from
 Jace Bennett (<%= twit "jacebennett" %>),
 Abner Coimbre (<%= twit "abnercoimbre" %>),
-Matthew VanDevander (<%= twit "mvandevander" %>),
+Matthew VanDevander (<%= twit "mvandevander" %>, supportable on
+[Patreon](https://www.patreon.com/mv)),
 Gustavo Chavez (<%= twit "gusChvz" %>),
 Kasper Sauramo (<%= twit "KMSchme" %>),
 Ben Craddock (<%= twit "theinternetftw" %>),
 Dustin Specht (<%= twit "Dustin_Specht" %>),
-and Jacob Pike (<%= twit "pikejd" %>).
+Jacob Pike (<%= twit "pikejd" %>)
+and Matt Mascarenhas (<%= twit "miblo_" %>). Matt is currently the sole
+maintainer, doing so live on [Twitch](http://www.twitch.tv/miblo) and may be
+supported on [Patreon](https://www.patreon.com/miblo).
 Please take a moment to thank them if you happen to see them
 on The Twitters! :)*
 
