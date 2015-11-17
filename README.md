@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/HandmadeCompanion/HandmadeCompanion.svg?branch=master)](https://travis-ci.org/HandmadeCompanion/HandmadeCompanion)
 # HandmadeCompanion
 
 ## Contributing
