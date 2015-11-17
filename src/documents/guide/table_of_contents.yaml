@@ -4,7 +4,7 @@ categories:
   - title: "Text Editor Tutorial"
     description: >
         By popular demand, Casey goes through his emacs setup
-        and shows how he makes use of the text editor.
+        and shows how he makes use of the text editor
     days:
         [emacs]
 
@@ -18,7 +18,7 @@ categories:
         to start from scratch.  At some point, when there is
         time, I may try to do a more complete intro series for
         people who want to follow Handmade Hero but have little
-        or no programming experience.
+        or no programming experience
     days:
         [day1, day2, day3, day4, day5]
 
@@ -28,7 +28,7 @@ categories:
         The first week of Handmade Hero was spent setting up a
         Windows build, creating a window, and making it so that
         we could directly write animating graphics into a framebuffer
-        and have Windows display it in our window.
+        and have Windows display it in our window
     days:
         [day001, day002, day003, day004, day005]
 
@@ -36,7 +36,7 @@ categories:
     iker_url: "handmade_hero_week_002.png"
     description: >
         The second week of Handmade was spent getting sound,
-        input, and timing working.
+        input, and timing working
     days:
         [day006, day007, day008, day009, day010]
 
@@ -45,7 +45,7 @@ categories:
     description: >
         The third week of Handmade Hero had us abstracting our
         Win32 code so we could divide the project into
-        platform-specific and platform-independent parts.
+        platform-specific and platform-independent parts
     days:
         [day011, day012, day013, day014, day015]
 
@@ -54,7 +54,7 @@ categories:
     description: >
         The fourth week of Handmade Hero was spent cleaning up
         our Win32 code, and getting to a lot of the "TODO" markers
-        we put in the source code.
+        we put in the source code
     days:
         [day016, day017, day018, day019, day020]
 
@@ -63,7 +63,7 @@ categories:
     description: >
         The fifth week of Handmade Hero is all about taking some
         time to do crazy, fun, and useful stuff with our Win32
-        layer.
+        layer
     days:
         [day021, day022, day023, day024, day025]
 
@@ -73,7 +73,7 @@ categories:
     description: >
         The sixth week of Handmade Hero spends time laying the
         foundation of the game upon the platform work done over
-        the previous weeks.
+        the previous weeks
     days:
         [day026, day027, day028, day029, day030]
 
@@ -82,7 +82,7 @@ categories:
     description: >
         The seventh week of Handmade Hero is about figuring
         out how we want to store the game world, as well as
-        how to represent positions within that world.
+        how to represent positions within that world
     days:
         [day031, day032, day033, day034, day035]
 
@@ -90,7 +90,7 @@ categories:
     iker_url: "handmade_hero_week_008.png"
     description: >
         The eighth week of Handmade Hero focuses on loading
-        and displaying our first asset files.
+        and displaying our first asset files
     days:
         [day036, day037, day038, day039, day040]
 
@@ -98,7 +98,7 @@ categories:
     iker_url: "handmade_hero_week_009.png"
     description: >
         The ninth week of Handmade Hero introduces vectors and
-        begins the process of using them to improve character motion.
+        begins the process of using them to improve character motion
     days:
         [day041, day042, day043, day044, day045]
 
@@ -106,7 +106,7 @@ categories:
     iker_url: "handmade_hero_week_010.png"
     description: >
         The tenth week of Handmade Hero concentrates on iteratively
-        improving the nascent collision detection code.
+        improving the nascent collision detection code
     days:
         [day046, day047, day048, day049, day050]
 
@@ -114,133 +114,133 @@ categories:
     iker_url: "handmade_hero_week_011.png"
     description: >
         The eleventh week of Handmade Hero is mainly about handling
-        entities.
+        entities
     days:
         [day051, day052, day053, day054, day055]
 
   - title: "Week 12: Entities in Space"
     iker_url:
     description: >
-        The twelfth week continues with entities. And space. Entities in space.
+        The twelfth week continues with entities. And space. Entities in space
     days:
         [day056, day057, day058, day059, day060]
 
   - title: "Week 13: Simulation Regions"
     iker_url:
     description: >
-        The thirteenth week concentrates on simulation.
+        The thirteenth week concentrates on simulation
     days:
         [day061, day062, day063, day064, day065]
 
   - title: "Week 14: Collision Rules"
     iker_url:
     description: >
-        The fourteenth week continues with simulation regions. And Figure out how to handle collision rules.
+        The fourteenth week continues with simulation regions. And Figure out how to handle collision rules
     days:
         [day066, day067, day068, day069, day070]
 
   - title: "Week 15"
     iker_url:
     description: >
-        Week fifteen.
+        Week fifteen
     days:
         [day071, day072, day073, day074, day075]
 
   - title: "Week 16"
     iker_url:
     description: >
-        Week sixteen.
+        Week sixteen
     days:
         [day076, day077, day078, day079, day080]
 
   - title: "Week 17"
     iker_url:
     description: >
-        Week seventeen.
+        Week seventeen
     days:
         [day081, day082, day083, day084, day085]
 
   - title: "Week 18"
     iker_url:
     description: >
-        Week eighteen.
+        Week eighteen
     days:
         [day086, day087, day088, day089, day090]
 
   - title: "Week 19"
     iker_url:
     description: >
-        Week nineteen.
+        Week nineteen
     days:
         [day091, day092, day093, day094, day095]
 
   - title: "Week 20"
     iker_url:
     description: >
-        Week twenty.
+        Week twenty
     days:
         [day096, day097, day098, day099, day100]
 
   - title: "Week 21"
     iker_url:
     description: >
-        Week twenty-one.
+        Week twenty-one
     days:
         [day101, day102, day103, day104, day105]
 
   - title: "Week 22"
     iker_url:
     description: >
-        Week twenty-two.
+        Week twenty-two
     days:
         [day106, day107, day108, day109, day110]
 
   - title: "Week 23"
     iker_url:
     description: >
-        Week twenty-three.
+        Week twenty-three
     days:
         [day111, day112, day113, day114, day115]
 
   - title: "Week 24"
     iker_url:
     description: >
-        Week twenty-four.
+        Week twenty-four
     days:
         [day116, day117, day118, day119, day120]
 
   - title: "Week 25"
     iker_url:
     description: >
-        Week twenty-five.
+        Week twenty-five
     days:
         [day121, day122, day123, day124, day125]
 
   - title: "Week 26"
     iker_url:
     description: >
-        Week twenty-six.
+        Week twenty-six
     days:
         [day126, day127, day128, day129, day130]
 
   - title: "Week 27"
     iker_url:
     description: >
-        Week twenty-seven.
+        Week twenty-seven
     days:
         [day131, day132, day133, day134, day135]
 
   - title: "Week 28"
     iker_url:
     description: >
-        Week twenty-eight.
+        Week twenty-eight
     days:
         [day136, day137, day138, day139, day140]
 
   - title: "Week 29"
     iker_url:
     description: >
-        Week twenty-nine.
+        Week twenty-nine
     days:
         [day141, day142, day143, day144, day145]
 
