@@ -2,3 +2,5 @@
 /out
 *.sublime-*
 *.swp
+build.sh
+deploy.sh
