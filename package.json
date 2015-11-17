@@ -5,7 +5,7 @@
   "description": "Companion Site for Handmade Hero educational content",
   "author": "Jace Bennett",
   "license": "CC0",
-  "homepage": "http://forums.handmadehero.org/jace/",
+  "homepage": "https://hero.handmadedev.org/jace/",
   "repository": {
     "type": "git",
     "url": "https://github.com/HandmadeHeroes/HandmadeCompanion.git"

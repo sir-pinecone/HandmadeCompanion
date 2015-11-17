@@ -11,9 +11,10 @@ docpadConfig = {
     templateData:
         site:
             title: "Handmade Companion"
-            guide_url: "https://forums.handmadehero.org/jace/guide/"
-            resources_url: "https://forums.handmadehero.org/jace/resources/"
-            thanks_url: "https://forums.handmadehero.org/jace/thanks/"
+            root_url: "https://hero.handmadedev.org"
+            guide_url: "https://hero.handmadedev.org/jace/guide/"
+            resources_url: "https://hero.handmadedev.org/jace/resources/"
+            thanks_url: "https://hero.handmadedev.org/jace/thanks/"
 
         rootPath: ->
             if process.env["HOSTROOT"]?
