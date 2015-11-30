@@ -13,7 +13,7 @@
 #	endfunction
 #
 #	nnoremap <???> :call MPVSetTime()<CR>
-#	nnoremap <???> :r!/path/to/this-script.sh<CR>
+#	nnoremap <???> :r!/path/to/this-script.sh<CR>t"
 #
 #	And start mpv with:
 #		$ mpv --input-unix-socket=/tmp/mpvsocket hmh-video.mp4
@@ -33,7 +33,7 @@ get_time() {
 		timestamp=$(date -d@"$ts_raw" -u +%-M:%S)
 	fi
 
-	echo "    \"$timestamp\": \""
+	echo "    \"$timestamp\": \"\""
 }
 
 set_time() {
