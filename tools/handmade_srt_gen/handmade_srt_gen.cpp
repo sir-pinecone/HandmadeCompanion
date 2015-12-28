@@ -1,13 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+#ifdef PLATFORM_WINDOWS
 #include <windows.h>
+#else
+#include <errno.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <dirent.h>
+#endif
+
+#ifdef PLATFORM_WINDOWS
+#define VIDEO_DIRECTORY "src\\documents\\videos\\"
+#define SLASH '\\'
+#define SLASH_STRING "\\"
+#else
+#define VIDEO_DIRECTORY "src/documents/videos/"
+#define SLASH '/'
+#define SLASH_STRING "/"
+#endif
 
 #define ErrorPrint(...) fprintf(stderr, __VA_ARGS__); exit(1);
 #define Print(...) fprintf(stderr, __VA_ARGS__)
 #define ArrayCount(A) (sizeof(A) / sizeof((A)[0]))
-
-#define VIDEO_DIRECTORY "src\\documents\\videos\\"
 
 char GlobalSubFolderName[][128] = {"intro-to-c", "win32-platform", "game-architecture", "misc"};
 
@@ -41,10 +57,21 @@ PrintTimeStamp(FILE *OutputFile, char *TimeStamp)
         TokenArray[0] = 0;
     }
 
+    int EndTokenArray[3];
+    int CarryOut = 0;
+    int ElapsedSecond = 8;
+    for (int Index = ArrayCount(EndTokenArray) - 1; Index >= 0; --Index)
+    {
+        int Result = (TokenArray[Index] +
+                      ((Index == ArrayCount(EndTokenArray) - 1)? ElapsedSecond : CarryOut));
+        EndTokenArray[Index] = Result % 60;
+        CarryOut = Result / 60;
+    }
+
     // TODO(wheatdog): 5 seconds long to display the subtitles
     fprintf(OutputFile, "%02d:%02d:%02d,000 --> %02d:%02d:%02d,000\n",
-          TokenArray[0], TokenArray[1], TokenArray[2],
-          TokenArray[0], TokenArray[1], TokenArray[2]+5);
+            TokenArray[0], TokenArray[1], TokenArray[2],
+            EndTokenArray[0], EndTokenArray[1], EndTokenArray[2]);
 }
 
 void
@@ -103,6 +130,54 @@ TransformAndOutput(FILE *InputFile, FILE *OutputFile)
     }
 }
 
+void
+MakeDirectory(char *OutputFileName)
+{
+#ifdef PLATFORM_WINDOWS
+    if (!CreateDirectory(OutputFileName, 0))
+    {
+        if (GetLastError() != ERROR_ALREADY_EXISTS)
+        {
+            ErrorPrint("Create directory %s failed\n", OutputFileName);
+        }
+    }
+#else
+    if (mkdir(OutputFileName, 0755) < 0)
+    {
+        if (errno != EEXIST)
+        {
+            ErrorPrint("mkdir %s failed, errno = %d\n", OutputFileName, errno);
+        }
+        else
+        {
+            struct stat FileStatus;
+            if (stat(OutputFileName, &FileStatus) < 0)
+            {
+                ErrorPrint("stat %s failed, errno = %d\n", OutputFileName, errno);
+            }
+
+            // TODO(wheatdog): Support symbolic link?
+            if (!S_ISDIR(FileStatus.st_mode))
+            {
+                ErrorPrint("%s existed and it is not a folder.\n", OutputFileName);
+            }
+        }
+    }
+#endif
+}
+
+void
+CheckAndAdjustFolderName(char *Dest, char *FolderName, size_t Size)
+{
+    strncpy(Dest, FolderName, sizeof(Dest));
+    int DestLength = strlen(Dest);
+    if (Dest[DestLength - 1] != SLASH)
+    {
+        Dest[DestLength] = SLASH;
+        Dest[++DestLength] = '\0';
+    }
+}
+
 int
 main(int ArgCount, char *Args[])
 {
@@ -128,31 +203,13 @@ main(int ArgCount, char *Args[])
         case Mode_Sync:
         {
             char OutputFileName[1024];
-            strncpy(OutputFileName, Args[2], sizeof(OutputFileName));
+            CheckAndAdjustFolderName(OutputFileName, Args[2], sizeof(OutputFileName));
             int OutputFileNameLength = strlen(OutputFileName);
-            if (OutputFileName[OutputFileNameLength - 1] != '\\')
-            {
-                OutputFileName[OutputFileNameLength] = '\\';
-                OutputFileName[++OutputFileNameLength] = '\0';
-            }
 
-            BOOL CreateDirResult;
-            if ((CreateDirResult = CreateDirectory(OutputFileName, 0)) == 0)
-            {
-                if (GetLastError() != ERROR_ALREADY_EXISTS)
-                {
-                    ErrorPrint("Create directory %s failed", OutputFileName);
-                }
-            }
+            MakeDirectory(OutputFileName);
 
             char RelativeVideoDir[1024];
-            strncpy(RelativeVideoDir, Args[1], sizeof(RelativeVideoDir));
-            int RelativeVideoDirLength = strlen(RelativeVideoDir);
-            if (RelativeVideoDir[RelativeVideoDirLength - 1] != '\\')
-            {
-                RelativeVideoDir[RelativeVideoDirLength] = '\\';
-                RelativeVideoDir[++RelativeVideoDirLength] = '\0';
-            }
+            CheckAndAdjustFolderName(RelativeVideoDir, Args[1], sizeof(RelativeVideoDir));
             strncat(RelativeVideoDir, VIDEO_DIRECTORY, sizeof(RelativeVideoDir));
             int EndOfRelativeVideoDir = strlen(RelativeVideoDir);
 
@@ -161,7 +218,10 @@ main(int ArgCount, char *Args[])
                  ++FolderIndex)
             {
                 strncat(RelativeVideoDir, GlobalSubFolderName[FolderIndex], sizeof(RelativeVideoDir));
-                strncat(RelativeVideoDir, "\\*", sizeof(RelativeVideoDir));
+                strncat(RelativeVideoDir, SLASH_STRING, sizeof(RelativeVideoDir));
+
+#ifdef PLATFORM_WINDOWS
+                strncat(RelativeVideoDir, "*", sizeof(RelativeVideoDir));
                 int EndOfSubFolder = strlen(RelativeVideoDir) - 1;
 
                 WIN32_FIND_DATA FileInfo;
@@ -169,12 +229,28 @@ main(int ArgCount, char *Args[])
                 RelativeVideoDir[EndOfSubFolder] = '\0';
 
                 BOOL FindResult = (Handle != INVALID_HANDLE_VALUE);
-                while (Handle && FindResult)
+                char *FocusFileName = FileInfo.cFileName;
+                int KeepGoing = Handle && FindResult;
+#else
+                strncat(RelativeVideoDir, "/", sizeof(RelativeVideoDir));
+                int EndOfSubFolder = strlen(RelativeVideoDir);
+
+                DIR *Dir = opendir(RelativeVideoDir);
+                if (!Dir)
                 {
-                    int FileNameLength = strlen(FileInfo.cFileName);
-                    if (strcmp(FileInfo.cFileName + FileNameLength - 2, "md") == 0)
+                    ErrorPrint("Open directory %s failed\n", RelativeVideoDir);
+                }
+                struct dirent *DirEntry = readdir(Dir);
+                char *FocusFileName = DirEntry->d_name;
+                int KeepGoing = (DirEntry != NULL);
+#endif
+                while (KeepGoing)
+                {
+                    int FileNameLength = strlen(FocusFileName);
+                    if ((FileNameLength > 3) &&
+                        (strcmp(FocusFileName + FileNameLength - 2, "md") == 0))
                     {
-                        strncat(RelativeVideoDir, FileInfo.cFileName, sizeof(RelativeVideoDir));
+                        strncat(RelativeVideoDir, FocusFileName, sizeof(RelativeVideoDir));
                         Print("processing: %s\n", RelativeVideoDir);
                         FILE *InputFile = fopen(RelativeVideoDir, "r");
                         if (!InputFile)
@@ -182,7 +258,7 @@ main(int ArgCount, char *Args[])
                             ErrorPrint("error: failed to open %s.\n", Args[1]);
                         }
 
-                        char *Day = strtok(FileInfo.cFileName,".");
+                        char *Day = strtok(FocusFileName,".");
                         char TempBuffer[128];
                         snprintf(TempBuffer, ArrayCount(OutputFileName), "handmade_hero_%s.srt", Day);
                         strncat(OutputFileName, TempBuffer, sizeof(OutputFileName));
@@ -202,9 +278,22 @@ main(int ArgCount, char *Args[])
                         RelativeVideoDir[EndOfSubFolder] = '\0';
                         OutputFileName[OutputFileNameLength] = '\0';
                     }
+#ifdef PLATFORM_WINDOWS
                     FindResult = FindNextFile(Handle, &FileInfo);
+                    KeepGoing = Handle && FindResult;
+                    FocusFileName = FileInfo.cFileName;
+#else
+                    DirEntry = readdir(Dir);
+                    KeepGoing = (DirEntry != NULL);
+                    FocusFileName = DirEntry->d_name;
+#endif
                 }
 
+#ifdef PLATFORM_WINDOWS
+                FindClose(Handle);
+#else
+                closedir(Dir);
+#endif
                 RelativeVideoDir[EndOfRelativeVideoDir] = '\0';
             }
         } break;
