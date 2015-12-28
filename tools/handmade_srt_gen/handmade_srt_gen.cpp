@@ -60,8 +60,6 @@ TransformAndOutput(FILE *InputFile, FILE *OutputFile)
             break;
         }
 
-        // Print("line %d: %s", Number, Line);
-
         if (strncmp(Line, "---", 2) == 0)
         {
             ++FindThreeDashTimes;
@@ -73,8 +71,19 @@ TransformAndOutput(FILE *InputFile, FILE *OutputFile)
         int QuoteMarkCount = 0;
         while((QuoteMarkCount < 4) && (QuoteMark[QuoteMarkCount] = strchr(TestLine, '\"')))
         {
-            // Print("%d: %s", QuoteMarkCount, QuoteMark[QuoteMarkCount]);
             TestLine = QuoteMark[QuoteMarkCount] + 1;
+            if ((QuoteMarkCount == 3) && (*(QuoteMark[QuoteMarkCount] - 1) == '\\'))
+            {
+                char *ShiftStart = QuoteMark[QuoteMarkCount]--;
+                while (*ShiftStart != '\0')
+                {
+                    *(ShiftStart - 1) = *ShiftStart;
+                    ++ShiftStart;
+                }
+                *(ShiftStart - 1) = *ShiftStart;
+
+                continue;
+            }
             ++QuoteMarkCount;
         }
 
@@ -128,9 +137,9 @@ main(int ArgCount, char *Args[])
             }
 
             BOOL CreateDirResult;
-            if ((CreateDirResult = CreateDirectory(OutputFileName, 0)) != 0)
+            if ((CreateDirResult = CreateDirectory(OutputFileName, 0)) == 0)
             {
-                if (CreateDirResult != ERROR_ALREADY_EXISTS)
+                if (GetLastError() != ERROR_ALREADY_EXISTS)
                 {
                     ErrorPrint("Create directory %s failed", OutputFileName);
                 }
@@ -198,8 +207,6 @@ main(int ArgCount, char *Args[])
 
                 RelativeVideoDir[EndOfRelativeVideoDir] = '\0';
             }
-
-
         } break;
 
         case Mode_OneFile:
@@ -219,8 +226,6 @@ main(int ArgCount, char *Args[])
             ErrorPrint("Something strange happened.");
         } break;
     }
-
-
 
     return 0;
 }
