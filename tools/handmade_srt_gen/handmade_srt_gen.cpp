@@ -25,7 +25,7 @@
 #define Print(...) fprintf(stderr, __VA_ARGS__)
 #define ArrayCount(A) (sizeof(A) / sizeof((A)[0]))
 
-char GlobalSubFolderName[][128] = {"intro-to-c", "win32-platform", "game-architecture", "misc"};
+char GlobalSubFolderName[][128] = {"intro-to-c", "win32-platform", "game-architecture", "misc", "chat"};
 
 enum mode
 {

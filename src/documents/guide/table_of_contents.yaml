@@ -383,4 +383,11 @@ categories:
         Week forty-nine
     days:
         [day241, day242]
+
+  - title: "RSI Leave"
+    iker_url:
+    description: >
+        Q&A Sessions while Casey is on RSI leave resting his typing fingers
+    days:
+        [chat001]
 ---
