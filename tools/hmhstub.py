@@ -105,15 +105,20 @@ youtube_video_id = youtube_video_id[youtube_video_id.rfind(':')+1:]
 print('\n================================================================================\n')
 print('New Video: %s\n' %(format(yttitle)))
 print('Needs annotating: https://www.youtube.com/watch?v=%s' %(format(youtube_video_id)))
-if "Handmade Hero Chat" in title:
+if "Handmade Hero Chat" in yttitle:
     print('https://hero.handmadedev.org/jace/videos/chat/chat%03d.html\n' %(int(episode_number)))
 else:
     print('https://hero.handmadedev.org/jace/videos/game-architecture/day%3d.html\n' %(int(episode_number)))
 print('Ensure the ToC has been updated!\n')
 print('================================================================================\n')
 
+if "Handmade Hero Chat" in yttitle:
+    genre = "chat"
+else:
+    genre = "day"
+
 # Write basic template for video
-with open('day%3d.html.md'%(int(episode_number)), 'w') as f:
+with open('%s%03d.html.md'%(genre, int(episode_number)), 'w') as f:
     f.write('---\n')
     f.write('title: "{}"\n'.format(title))
     f.write('videoId: "{}"\n'.format(youtube_video_id))
@@ -278,7 +283,7 @@ if youtube_captions:
 questions = sorted(questions)
 
 # Write basic template for video
-with codecs.open('day%3d.html.md'%(int(episode_number)), 'w', encoding='utf-8') as f:
+with codecs.open('%s%03d.html.md'%(genre,int(episode_number)), 'w', encoding='utf-8') as f:
     f.write('---\n')
     f.write('title: "{}"\n'.format(title))
     f.write('videoId: "{}"\n'.format(youtube_video_id))
