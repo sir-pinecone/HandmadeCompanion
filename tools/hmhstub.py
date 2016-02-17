@@ -105,7 +105,10 @@ youtube_video_id = youtube_video_id[youtube_video_id.rfind(':')+1:]
 print('\n================================================================================\n')
 print('New Video: %s\n' %(format(yttitle)))
 print('Needs annotating: https://www.youtube.com/watch?v=%s' %(format(youtube_video_id)))
-print('https://hero.handmadedev.org/jace/videos/game-architecture/day%3d.html\n' %(int(episode_number)))
+if "Handmade Hero Chat" in title:
+    print('https://hero.handmadedev.org/jace/videos/chat/chat%03d.html\n' %(int(episode_number)))
+else:
+    print('https://hero.handmadedev.org/jace/videos/game-architecture/day%3d.html\n' %(int(episode_number)))
 print('Ensure the ToC has been updated!\n')
 print('================================================================================\n')
 
@@ -181,7 +184,7 @@ for twitch_video_id, twitch_video_time in target_twitch_video_entries:
                 if user == 'Miblo' and 'NOTE(annotator)' in message:
                     print(hit['_source']['recieved_at'], message)
                 # Only parse questions after Casey triggers the Q&A
-                if not process and user == 'cmuratori' and '!qa' in message:
+                if not process and user == 'abnercoimbre' or 'chronaldragon' or 'cmuratori' and '!qa' in message:
                     process = True
                 if process and user != 'hmh_bot':
                     m = message.lower().strip()
