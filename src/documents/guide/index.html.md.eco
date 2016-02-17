@@ -66,6 +66,10 @@ level of experience.
   <%= 'Day '+dayName.slice(3)+":" %>
  <% end %>
  
+ <% if dayName.match(/^chat\d+$/i): %>
+  <%= 'Chat '+dayName.slice(3)+":" %>
+ <% end %>
+
  <% for page, i in pages: %>
   <% url = @rootPath() + page.url %>
   <% statustext = if (page.markers == undefined or page.markers.length==0) then ' - Annotations Incomplete' else '' %>
