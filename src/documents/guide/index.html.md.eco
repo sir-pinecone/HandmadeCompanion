@@ -67,7 +67,7 @@ level of experience.
  <% end %>
  
  <% if dayName.match(/^chat\d+$/i): %>
-  <%= 'Chat '+dayName.slice(3)+":" %>
+  <%= 'Chat '+dayName.slice(4)+":" %>
  <% end %>
 
  <% for page, i in pages: %>
