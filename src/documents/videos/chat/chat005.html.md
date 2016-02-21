@@ -2,7 +2,7 @@
 title: "SGX and Unbreakable DRM"
 videoId: "8eULB8uMIuc"
 markers:
-    "0:18": "andrewjdr Q: Can you explain how this Intel SGX thing allows for \"unbreakable DRM\" for applications (kind of an uncommon thing on the PC side up until now)?"
+    "0:18": "AndrewJDR Q: Can you explain how this Intel SGX thing allows for \"unbreakable DRM\" for applications (kind of an uncommon thing on the PC side up until now)?"
     "1:55": "Blackboard: The current state of DRM"
     "7:51": "Blackboard: Baking the key, e.g. RSA private key, into the CPU"
     "15:13": "andsz_ Q: You could just give them another public key that you have the private key for [see Resources]"
