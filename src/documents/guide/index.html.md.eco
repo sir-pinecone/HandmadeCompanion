@@ -10,19 +10,27 @@ button_id: "guide"
 not have been possible without the generous contributions
 of time and energy from
 Jace Bennett (<%= twit "jacebennett" %>),
-Abner Coimbre (<%= twit "abnercoimbre" %>),
+Abner Coimbre (<%= twit "AbnerCoimbre" %>),
 Matthew VanDevander (<%= twit "mvandevander" %>, supportable on
 [Patreon](https://www.patreon.com/mv)),
 Gustavo Chavez (<%= twit "gusChvz" %>),
 Kasper Sauramo (<%= twit "KMSchme" %>),
 Ben Craddock (<%= twit "theinternetftw" %>),
 Dustin Specht (<%= twit "Dustin_Specht" %>),
-Jacob Pike (<%= twit "pikejd" %>)
-and Matt Mascarenhas (<%= twit "miblo_" %>). Matt is currently the sole
-maintainer, doing so live on [Twitch](http://www.twitch.tv/miblo) and may be
-supported on [Patreon](https://www.patreon.com/miblo).
-Please take a moment to thank them if you happen to see them
-on The Twitters! :)*
+Jacob Pike (<%= twit "pikejd" %>),
+Matt Mascarenhas (<%= twit "miblo_" %>),
+Miguel Lechón (<%= twit "debiatan" %>),
+Cory Henderlite (<%= twit "effect0r" %>),
+Insofaras (<%= twit "insofaras_" %>),
+Clay Murray (<%= twit "powerc9000" %>) and
+Tim Liou (<%= twit "wdliou" %>).
+
+Matt (Miblo) is currently the sole maintainer, doing so live on
+[Twitch](http://www.twitch.tv/miblo) and may be supported on
+[Patreon](https://www.patreon.com/miblo).
+
+Please take a moment to thank our
+contributors if you happen to see them on The Twitters! :)*
 
 ### How to Use This Guide
 
