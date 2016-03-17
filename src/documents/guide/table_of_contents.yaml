@@ -396,5 +396,12 @@ categories:
     description: >
         Week fifty
     days:
-        [day243, day244, day245, day246, day247]
+        [day243, day244, day245, day246]
+
+  - title: "Week 51"
+    iker_url:
+    description: >
+        Week fifty-one - resuming work on the debugger
+    days:
+        [day247, day 248]
 ---
