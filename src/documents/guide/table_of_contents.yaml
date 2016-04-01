@@ -413,10 +413,11 @@ categories:
     days:
         [day252, day253, day254, day255, day256]
 
-  - title: "Week 53"
+  - title: "Week 53: Cleanup"
     iker_url:
     description: >
-        Week fifty-three
+        The fifty-third week consists of platform layer, profiler and software
+        renderer cleanup
     days:
-        [day257, day258]
+        [day257, day258, day259]
 ---
