@@ -33,11 +33,19 @@ get_time() {
 		timestamp=$(date -d@"$ts_raw" -u +%-M:%S)
 	fi
 
-	echo "    \"$timestamp\": \"\""
+	if [[ "$MIBLO_MARKUP" == 1 ]]; then
+		echo "[$timestamp][]"
+	else
+		echo "    \"$timestamp\": \"\""
+	fi
 }
 
 set_time() {
-	ts_raw=$(sed -rn 's/^[^\"]+\"([0-9:]+)\".*$/\1/p' <<< "$1")
+	if [[ "$MIBLO_MARKUP" == 1 ]]; then
+		ts_raw=$(sed -rn 's/^\[([0-9:]+)\].*$/\1/p' <<< "$1")
+	else
+		ts_raw=$(sed -rn 's/^[^\"]+\"([0-9:]+)\".*$/\1/p' <<< "$1")
+	fi
 	
 	num_colons=$(grep -o : <<<"$ts_raw" | wc -l)
 
