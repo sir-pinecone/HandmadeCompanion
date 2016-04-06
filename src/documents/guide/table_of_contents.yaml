@@ -420,4 +420,11 @@ categories:
         renderer cleanup
     days:
         [day257, day258, day259]
+
+  - title: "Week 54"
+    iker_url:
+    description: >
+        Week fifty-four
+    days:
+        [day260]
 ---
