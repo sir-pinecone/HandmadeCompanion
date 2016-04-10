@@ -421,10 +421,10 @@ categories:
     days:
         [day257, day258, day259]
 
-  - title: "Week 54"
+  - title: "Week 54: Profiler Improvements"
     iker_url:
     description: >
-        Week fifty-four
+        The fifty-fourth week was spent improving the profiler
     days:
-        [day260, day261, day262]
+        [day260, day261, day262, day263]
 ---
