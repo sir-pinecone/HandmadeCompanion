@@ -435,10 +435,12 @@ categories:
     days:
         [day264, day265, day266, day267]
 
-  - title: "Week 56"
+  - title: "Week 56: Profiler Clean-up and Player Movement"
     iker_url:
     description: >
-        Week fifty-six
+        The fifty-sixth week began with some consolidation and clean-up of the
+        debug system and ended with the beginning of gameplay programming in
+        the form of a switch to hybrid tile-based movement
     days:
-        [day268, day269, day270]
+        [day268, day269, day270, day271]
 ---

@@ -48,7 +48,7 @@ level of experience.
 
 - Game engine coding begins on **Week 6**.
 
-- Game coding itself has not yet begun.
+- Gameplay coding begins on **Week 56**.
 
 <% {categories} = @getFile({fullPath: $like: 'table_of_contents.yaml'}).toJSON() %>
 <% for cat in categories: %>
