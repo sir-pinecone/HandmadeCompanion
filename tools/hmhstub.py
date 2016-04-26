@@ -106,9 +106,9 @@ print('\n=======================================================================
 print('New Video: %s\n' %(format(yttitle)))
 print('Needs annotating: https://www.youtube.com/watch?v=%s' %(format(youtube_video_id)))
 if "Handmade Hero Chat" in yttitle:
-    print('https://hero.handmadedev.org/jace/videos/chat/chat%03d.html\n' %(int(episode_number)))
+    print('https://hero.handmade.network/episode/chat/chat%03d\n' %(int(episode_number)))
 else:
-    print('https://hero.handmadedev.org/jace/videos/game-architecture/day%3d.html\n' %(int(episode_number)))
+    print('https://hero.handmade.network/episode/game-architecture/day%3d\n' %(int(episode_number)))
 print('Ensure the ToC has been updated!\n')
 print('================================================================================\n')
 
