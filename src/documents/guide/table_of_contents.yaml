@@ -444,10 +444,18 @@ categories:
     days:
         [day268, day269, day270, day271]
 
-  - title: "Week 57"
+  - title: "Week 57: Animation"
     iker_url:
     description: >
-        Week fifty-seven
+        The fifty-seventh week introduces animation, making the body hop between
+        traversable points and stretch accordingly
     days:
         [day272, day273, day274, day275]
+
+  - title: "Week 58"
+    iker_url:
+    description: >
+        Week fifty-eight
+    days:
+        [day276]
 ---
