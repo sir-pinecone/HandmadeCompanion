@@ -33,7 +33,7 @@ get_time() {
 		timestamp=$(date -d@"$ts_raw" -u +%-M:%S)
 	fi
 
-	if [[ "$MIBLO_MARKUP" == 1 ]]; then
+	if [[ "$HMML" == 1 ]]; then
 		echo "[$timestamp][]"
 	else
 		echo "    \"$timestamp\": \"\""
@@ -41,7 +41,7 @@ get_time() {
 }
 
 set_time() {
-	if [[ "$MIBLO_MARKUP" == 1 ]]; then
+	if [[ "$HMML" == 1 ]]; then
 		ts_raw=$(sed -rn 's/^\[([0-9:]+)\].*$/\1/p' <<< "$1")
 	else
 		ts_raw=$(sed -rn 's/^[^\"]+\"([0-9:]+)\".*$/\1/p' <<< "$1")
@@ -63,5 +63,3 @@ if [[ -n "$1" ]]; then
 else
 	get_time
 fi
-
-
