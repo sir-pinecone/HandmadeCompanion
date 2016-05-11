@@ -122,6 +122,7 @@ with open('%s%03d.html.md'%(genre, int(episode_number)), 'w') as f:
     f.write('---\n')
     f.write('title: "{}"\n'.format(title))
     f.write('videoId: "{}"\n'.format(youtube_video_id))
+    f.write('markers:\n')
     f.write('---\n')
 
 # See if there are automatic captions for this episode

@@ -452,10 +452,18 @@ categories:
     days:
         [day272, day273, day274, day275]
 
-  - title: "Week 58"
+  - title: "Week 58: Animation and Entity System"
     iker_url:
     description: >
-        Week fifty-eight
+        The fifty-eighth week began by finishing off the animation for now
+        before moving on to start on the new experimental sparse entity system
     days:
         [day276, day277, day278, day279]
+
+  - title: "Week 59"
+    iker_url:
+    description: >
+        Week fifty-nine
+    days:
+        [day280]
 ---
