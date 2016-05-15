@@ -460,10 +460,11 @@ categories:
     days:
         [day276, day277, day278, day279]
 
-  - title: "Week 59"
+  - title: "Week 59: Entities, Camera, Z and Head & Body Reorganisation"
     iker_url:
     description: >
-        Week fifty-nine
+        The fifty-ninth week contained a mixed bag of entity system clean-up,
+        camera control, Z movement, and reorganisation of the head and body
     days:
-        [day280, day281, day282, day283]
+        [day280, day281, day282, day283, day284]
 ---
