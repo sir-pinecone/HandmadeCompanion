@@ -467,4 +467,11 @@ categories:
         camera control, Z movement, and reorganisation of the head and body
     days:
         [day280, day281, day282, day283, day284]
+
+  - title: "Week 60"
+    iker_url:
+    description: >
+        Week sixty
+    days:
+        [day285]
 ---
