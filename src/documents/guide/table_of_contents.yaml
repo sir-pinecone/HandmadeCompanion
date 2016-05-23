@@ -468,10 +468,11 @@ categories:
     days:
         [day280, day281, day282, day283, day284]
 
-  - title: "Week 60"
+  - title: "Week 60: Transactional Movement and Entity Intelligence"
     iker_url:
     description: >
-        Week sixty
+        The sixtieth week introduced the notion of transactional movement and
+        started to decouple entity behaviour and allow pairing of entities
     days:
-        [day285, day286]
+        [day285, day286, day287]
 ---
