@@ -471,8 +471,8 @@ categories:
   - title: "Week 60: Transactional Movement and Entity Intelligence"
     iker_url:
     description: >
-        The sixtieth week introduced the notion of transactional movement and
-        started to decouple entity behaviour and allow pairing of entities
+        The sixtieth week introduced the notion of transactional movement,
+        started to decouple entity behaviour and introduced brains
     days:
         [day285, day286, day287]
 ---
