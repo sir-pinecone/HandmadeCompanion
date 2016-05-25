@@ -475,4 +475,11 @@ categories:
         started to decouple entity behaviour and introduced brains
     days:
         [day285, day286, day287]
+
+  - title: "Week 61"
+    iker_url:
+    description: >
+        Week sixty-one
+    days:
+        [day288]
 ---
