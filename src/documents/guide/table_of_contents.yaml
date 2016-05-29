@@ -476,10 +476,11 @@ categories:
     days:
         [day285, day286, day287]
 
-  - title: "Week 61"
+  - title: "Week 61: Brains, Decoupled Entity Rendering and Hopping"
     iker_url:
     description: >
-        Week sixty-one
+        The sixty-first week finished implementing brains, decoupled visuals
+        from entity type and got the monstar hopping
     days:
-        [day288, day289, day290]
+        [day288, day289, day290, day291]
 ---
