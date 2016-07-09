@@ -506,10 +506,11 @@ categories:
     days:
         [day299, day300, day301, day302]
 
-  - title: "Week 65"
+  - title: "Week 65: Sorting and Memory Arenas"
     iker_url:
     description: >
-        Week sixty-five
+        The sixty-fifth week resumed our work sorting entities, and made memory
+        arenas be used in the platform layer 
     days:
-        [day303, day304, day305]
+        [day303, day304, day305, day306]
 ---
