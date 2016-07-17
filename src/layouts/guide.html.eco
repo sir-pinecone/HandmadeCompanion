@@ -40,4 +40,9 @@ layout: "default"
              <a href="http://patreon.com/cmuratori">Casey now has a page on Patreon</a>.
         </div>
     </div>
+    <div id="annotation_ad">
+        <div class="sidebar-heading">Support the guide</div>
+        Support the maintainer of the annotated episode guide,
+        <a href="https://www.patreon.com/miblo">Miblo, on Patreon</a>.
+    </div>
 </div>
