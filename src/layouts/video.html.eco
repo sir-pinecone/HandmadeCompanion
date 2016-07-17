@@ -7,18 +7,24 @@ layout: "default"
 </div>
 
 <% if @document.markers?: %>
-<nav class="timecodes">
-    <ul name="markers">
-    <% for time, label of @document.markers: %>
-        <li>
-            <a href="#" class="marker-time" data-human-timecode="<%= time %>">
-                <%= label %> (<%= time %>)
-            </a>
-        </li>
+<div class="timecodes-container">
+    <nav class="timecodes">
+        <ul name="markers">
+        <% for time, label of @document.markers: %>
+            <li>
+                <a href="#" class="marker-time" data-human-timecode="<%= time %>">
+                    <%= label %> (<%= time %>)
+                </a>
+            </li>
+        <% end %>
+        </ul>
+    </nav>
     <% end %>
-    </ul>
-</nav>
-<% end %>
+    <div class="annotator-support">
+        <a href="https://www.patreon.com/miblo">Support Miblo, annotator of the 
+        Handmade Hero episodes on Patreon</a>
+    </div>
+</div>
 
 <article id="video-notes">
     <h1><%= @document.title %></h1>
