@@ -514,17 +514,18 @@ categories:
     days:
         [day303, day304, day305, day306]
 
-  - title: "Week 66"
+  - title: "Week 66: Sorting"
     iker_url:
     description: >
-        Week sixty-six
+        The sixty-sixth week was all about sorting
     days:
         [day307, day308, day309, day310]
 
-  - title: "Week 67"
+  - title: "Week 67: Sorting and Z-Layers"
     iker_url:
     description: >
-        Week sixty-seven
+        The sixty-seventh week continued working on sorting, including
+        solidifying the concept of Z-layers
     days:
-        [day311, day312, day313]
+        [day311, day312, day313, day314]
 ---
