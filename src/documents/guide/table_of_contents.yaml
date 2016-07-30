@@ -529,10 +529,11 @@ categories:
     days:
         [day311, day312, day313, day314]
 
-  - title: "Week 68"
+  - title: "Week 68: Sorting and Multiple Render Targets"
     iker_url:
     description: >
-        Week sixty-eight
+        The sixty-eighth week continued working on sorting, and introduced the
+        notion of multiple render layers
     days:
-        [day315, day316, day317, day318]
+        [day315, day316, day317, day318, day319]
 ---
