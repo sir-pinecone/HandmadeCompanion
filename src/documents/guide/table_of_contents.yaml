@@ -537,10 +537,11 @@ categories:
     days:
         [day315, day316, day317, day318, day319]
 
-  - title: "Week 69"
+  - title: "Week 69: Rendering and Miscellany"
     iker_url:
     description: >
-        Week sixty-nine
+        The sixty-ninth week was spent working on the rendering and fixing
+        miscellaneous outstanding bugs
     days:
-        [day320, day321, day322]
+        [day320, day321, day322, day323]
 ---
