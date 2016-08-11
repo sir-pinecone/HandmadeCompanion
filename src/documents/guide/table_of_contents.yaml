@@ -545,10 +545,11 @@ categories:
     days:
         [day320, day321, day322, day323]
 
-  - title: "Week 70"
+  - title: "Week 70: Improved Texture Downloading and Varargs"
     iker_url:
     description: >
-        Week seventy
+        The seventieth week moved away from multiple OpenGL contexts and
+        implemented varargs
     days:
-        [day324, day325]
+        [day324, day325, day326]
 ---
