@@ -552,4 +552,11 @@ categories:
         implemented varargs
     days:
         [day324, day325, day326]
+
+  - title: "Week 71"
+    iker_url:
+    description: >
+        Week seventy-one
+    days:
+        [day327]
 ---
