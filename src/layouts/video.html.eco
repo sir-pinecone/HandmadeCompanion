@@ -20,10 +20,6 @@ layout: "default"
         </ul>
     </nav>
     <% end %>
-    <div class="annotator-support">
-        <a href="https://www.patreon.com/miblo">Support Miblo, annotator of the 
-        Handmade Hero episodes on Patreon</a>
-    </div>
 </div>
 
 <article id="video-notes">
