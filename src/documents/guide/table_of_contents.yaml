@@ -553,10 +553,11 @@ categories:
     days:
         [day324, day325, day326]
 
-  - title: "Week 71"
+  - title: "Week 71: Printf Replacement"
     iker_url:
     description: >
-        Week seventy-one
+        The seventy-first week saw the replacement of printf(), thus completely
+        removing a dependency on the C runtime
     days:
-        [day327]
+        [day327, day328]
 ---
