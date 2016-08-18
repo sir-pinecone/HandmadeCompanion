@@ -556,8 +556,8 @@ categories:
   - title: "Week 71: Printf Replacement"
     iker_url:
     description: >
-        The seventy-first week saw the replacement of printf(), thus completely
-        removing a dependency on the C runtime
+        The seventy-first week saw the almost complete replacement of printf(),
+        with a view to removing a dependency on the C runtime library
     days:
         [day327, day328]
 ---
