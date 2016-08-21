@@ -13,7 +13,8 @@ layout: "default"
         <% for time, label of @document.markers: %>
             <li>
                 <a href="#" class="marker-time" data-human-timecode="<%= time %>">
-                    <%= time %>: <%= label %>
+                    <span style="color:#777777;float:left;font-size:86%;margin-right:.5em;text-align:right;vertical-align:middle;width:32px;"><%= time %></span>
+                    <span><%= label %></span>
                 </a>
             </li>
         <% end %>
