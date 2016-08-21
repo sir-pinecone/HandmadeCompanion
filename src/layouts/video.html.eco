@@ -11,9 +11,9 @@ layout: "default"
     <nav class="timecodes">
         <ul name="markers">
         <% for time, label of @document.markers: %>
-            <li>
+            <li style="margin:0 4px;">
                 <a href="#" class="marker-time" data-human-timecode="<%= time %>">
-                    <span style="color:#777777;float:left;font-size:86%;margin-right:.5em;text-align:right;vertical-align:middle;width:32px;"><%= time %></span>
+                    <span style="color:#777777;float:left;font-size:86%;margin-right:.5em;text-align:right;width:42px;"><%= time %></span>
                     <span><%= label %></span>
                 </a>
             </li>
