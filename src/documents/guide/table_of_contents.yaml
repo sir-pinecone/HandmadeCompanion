@@ -560,4 +560,11 @@ categories:
         with a view to removing a dependency on the C runtime library
     days:
         [day327, day328]
+
+  - title: "Week 72"
+    iker_url:
+    description: >
+        Week seventy-two
+    days:
+        [day329]
 ---
