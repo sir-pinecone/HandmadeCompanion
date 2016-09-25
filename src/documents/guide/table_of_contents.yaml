@@ -561,10 +561,11 @@ categories:
     days:
         [day327, day328]
 
-  - title: "Week 72"
+  - title: "Week 72: Finishing Printf Replacement, Bugs, Brains and Sorting"
     iker_url:
     description: >
-        Week seventy-two
+        The seventy-second week finished the printf replacement, cleared a bunch
+        of issues, activated entities by brain and sorted the debug overlay
     days:
-        [day329, day330, day331]
+        [day329, day330, day331, day332]
 ---
