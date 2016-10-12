@@ -576,10 +576,10 @@ categories:
     days:
         [day333, day334, day335]
 
-  - title: "Week 74"
+  - title: "Week 74: Particles and a Chat on Undefined Behavior"
     iker_url:
     description: >
-        Week seventy-four
+        The seventy-fourth week dealt with particles and undefined behavior
     days:
-        [day336, day337, day338, day339]
+        [day336, day337, day338, day339, chat011]
 ---
