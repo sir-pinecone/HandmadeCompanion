@@ -591,10 +591,11 @@ categories:
     days:
         [day340, chat012, day341, day342]
 
-  - title: "Week 76"
+  - title: "Week 76: Memory Protection"
     iker_url:
     description: >
-        Week seventy-six
+        The seventy-sixth week got hot code reloading working with dynamically
+        allocated memory arenas and introduced underflow / overflow protection
     days:
-        [day343, day344, day345]
+        [day343, day344, day345, day346]
 ---
