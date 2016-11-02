@@ -598,4 +598,11 @@ categories:
         allocated memory arenas and introduced underflow / overflow protection
     days:
         [day343, day344, day345, day346]
+
+  - title: "Week 77"
+    iker_url:
+    description: >
+        Week seventy-seven
+    days:
+        [day347]
 ---
