@@ -108,7 +108,7 @@ print('Needs annotating: https://www.youtube.com/watch?v=%s' %(format(youtube_vi
 if "Handmade Hero Chat" in yttitle:
     print('https://hero.handmade.network/episode/chat/chat%03d\n' %(int(episode_number)))
 else:
-    print('https://hero.handmade.network/episode/game-architecture/day%3d\n' %(int(episode_number)))
+    print('https://hero.handmade.network/episode/code/day%3d\n' %(int(episode_number)))
 print('Ensure the ToC has been updated!\n')
 print('================================================================================\n')
 

@@ -69,7 +69,7 @@ categories:
 
   - title: "Week 6: Game Engine Architecture"
     iker_url: "handmade_hero_week_006.png"
-    folder: "game-architecture"
+    folder: "code"
     description: >
         The sixth week of Handmade Hero spends time laying the
         foundation of the game upon the platform work done over
