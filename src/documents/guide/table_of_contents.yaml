@@ -599,10 +599,11 @@ categories:
     days:
         [day343, day344, day345, day346]
 
-  - title: "Week 77"
+  - title: "Week 77: Debugging and Multiple Sim Regions"
     iker_url:
     description: >
-        Week seventy-seven
+        The seventy-seventh week comprised work on debugging memory, cutscene
+        and traversable creation, and running multiple sim regions
     days:
-        [day347, day348]
+        [day347, day348, day349]
 ---
