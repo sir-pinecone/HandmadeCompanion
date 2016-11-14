@@ -606,4 +606,11 @@ categories:
         and traversable creation, and running multiple sim regions
     days:
         [day347, day348, day349]
+
+  - title: "Week 78"
+    iker_url:
+    description: >
+        Week seventy-eight
+    days:
+        [day350]
 ---
