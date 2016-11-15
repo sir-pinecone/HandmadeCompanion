@@ -607,10 +607,11 @@ categories:
     days:
         [day347, day348, day349]
 
-  - title: "Week 78"
+  - title: "Week 78: Multithreading Simulation Regions"
     iker_url:
     description: >
-        Week seventy-eight
+        The seventy-eighth week (actually the first weekend) was spent
+        multithreading the simulation regions
     days:
-        [day350]
+        [day350, day351]
 ---
