@@ -614,4 +614,11 @@ categories:
         multithreading the simulation regions
     days:
         [day350, day351]
+
+  - title: "Week 79"
+    iker_url:
+    description: >
+        Week seventy-nine
+    days:
+        [day352]
 ---
