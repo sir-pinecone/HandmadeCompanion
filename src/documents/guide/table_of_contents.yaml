@@ -615,10 +615,17 @@ categories:
     days:
         [day350, day351]
 
-  - title: "Week 79"
+  - title: "Weekend 2: Isolating the Camera Update Code"
     iker_url:
     description: >
-        Week seventy-nine
+        The second weekend was spent isolating the camera update code
     days:
         [day352]
+
+  - title: "Weekend 3: Compression"
+    iker_url:
+    description: >
+        The third weekend was spend implementing compression for the assets
+    days:
+        [day353]
 ---
