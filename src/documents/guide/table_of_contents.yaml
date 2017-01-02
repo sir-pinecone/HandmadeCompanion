@@ -625,7 +625,15 @@ categories:
   - title: "Weekend 3: Compression"
     iker_url:
     description: >
-        The third weekend was spend implementing compression for the assets
+        The third weekend was spent implementing compression for the assets
     days:
         [day353, day354]
+
+  - title: "Weekend 4: Clearing Out Pending GitHub Bugs"
+    iker_url:
+    description: >
+        The fourth weekend was spent clearing out pending GitHub bugs in
+        preparation for the 3D work of 2017
+    days:
+        [day355]
 ---
