@@ -637,10 +637,11 @@ categories:
     days:
         [day355]
 
-  - title: "Weekend 5"
+  - title: "Weekend 5: CLANG Compatibility and Camera Control"
     iker_url:
     description: >
-        Weekend five
+        The fifth weekend made the debug system compatible with CLANG and
+        enabled camera zooming for variably sized rooms
     days:
-        [day356]
+        [day356, day357]
 ---
