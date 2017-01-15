@@ -644,4 +644,11 @@ categories:
         enabled camera zooming for variably sized rooms
     days:
         [day356, day357]
+
+  - title: "Weekend 6"
+    iker_url:
+    description: >
+        Weekend six
+    days:
+        [day358]
 ---
