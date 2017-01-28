@@ -26,7 +26,7 @@
 #
 #       :r!/path/to/this-script.sh<CR>t"
 
-socket=/tmp/mpvsocket
+socket="${XDG_RUNTIME_DIR:-/tmp}/mpvsocket"
 
 get_time() {
     get_cmd='{ "command": ["get_property", "time-pos"] }'
