@@ -679,4 +679,11 @@ categories:
         Weekend ten
     days:
         [day366, day367]
+
+  - title: "Weekend 11"
+    iker_url:
+    description: >
+        Weekend eleven
+    days:
+        [day368]
 ---
