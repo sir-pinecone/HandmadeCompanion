@@ -721,4 +721,11 @@ categories:
         Weekend sixteen
     days:
         [day376, chat013]
+
+  - title: "Weekend 17"
+    iker_url:
+    description: >
+        Weekend seventeen
+    days:
+        [day377]
 ---
