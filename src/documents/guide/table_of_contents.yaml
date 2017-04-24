@@ -728,4 +728,11 @@ categories:
         Weekend seventeen
     days:
         [day377, day378]
+
+  - title: "Weekend 18"
+    iker_url:
+    description: >
+        Weekend eighteen
+    days:
+        [day379]
 ---
